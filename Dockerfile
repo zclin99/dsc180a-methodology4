@@ -19,9 +19,9 @@ USER root
 RUN	apt-get install htop
 
 # Added
-RUN	apt-get install aria2
-RUN	apt-get install nmap
-RUN	apt-get install traceroute
+RUN	apt-get -y install aria2
+RUN	apt-get -y install nmap
+RUN	apt-get -y install traceroute
 
 RUN conda install --yes geopandas
 RUN conda clean -tipy
